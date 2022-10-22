@@ -18,8 +18,7 @@
 		B00F73152903C12D005AE2A4 /* DownloadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00F73142903C12D005AE2A4 /* DownloadViewController.swift */; };
 		B00F731D2903C1D2005AE2A4 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00F731C2903C1D2005AE2A4 /* APICaller.swift */; };
 		B00F731F2903C1E2005AE2A4 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00F731E2903C1E2005AE2A4 /* Extensions.swift */; };
-		B00F73212903C1F4005AE2A4 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00F73202903C1F4005AE2A4 /* Movie.swift */; };
-		B00F73232903C1FE005AE2A4 /* Tv.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00F73222903C1FE005AE2A4 /* Tv.swift */; };
+		B00F73212903C1F4005AE2A4 /* Title.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00F73202903C1F4005AE2A4 /* Title.swift */; };
 		B00F73252903C21C005AE2A4 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00F73242903C21C005AE2A4 /* MainTabBarViewController.swift */; };
 		B00F73272903C372005AE2A4 /* CollectionViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00F73262903C372005AE2A4 /* CollectionViewTableViewCell.swift */; };
 		B00F73292903C397005AE2A4 /* HeroHedearUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00F73282903C397005AE2A4 /* HeroHedearUIView.swift */; };
@@ -39,8 +38,7 @@
 		B00F73142903C12D005AE2A4 /* DownloadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadViewController.swift; sourceTree = "<group>"; };
 		B00F731C2903C1D2005AE2A4 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
 		B00F731E2903C1E2005AE2A4 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		B00F73202903C1F4005AE2A4 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
-		B00F73222903C1FE005AE2A4 /* Tv.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tv.swift; sourceTree = "<group>"; };
+		B00F73202903C1F4005AE2A4 /* Title.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Title.swift; sourceTree = "<group>"; };
 		B00F73242903C21C005AE2A4 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		B00F73262903C372005AE2A4 /* CollectionViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewTableViewCell.swift; sourceTree = "<group>"; };
 		B00F73282903C397005AE2A4 /* HeroHedearUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroHedearUIView.swift; sourceTree = "<group>"; };
@@ -123,8 +121,7 @@
 		B00F73192903C15A005AE2A4 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				B00F73202903C1F4005AE2A4 /* Movie.swift */,
-				B00F73222903C1FE005AE2A4 /* Tv.swift */,
+				B00F73202903C1F4005AE2A4 /* Title.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -218,11 +215,10 @@
 				B00F73132903C114005AE2A4 /* SearchViewController.swift in Sources */,
 				B00F73292903C397005AE2A4 /* HeroHedearUIView.swift in Sources */,
 				B00F731F2903C1E2005AE2A4 /* Extensions.swift in Sources */,
-				B00F73232903C1FE005AE2A4 /* Tv.swift in Sources */,
 				B00F72FB2903BF9A005AE2A4 /* Netflix_Clone.xcdatamodeld in Sources */,
 				B00F72F12903BF9A005AE2A4 /* AppDelegate.swift in Sources */,
 				B00F73272903C372005AE2A4 /* CollectionViewTableViewCell.swift in Sources */,
-				B00F73212903C1F4005AE2A4 /* Movie.swift in Sources */,
+				B00F73212903C1F4005AE2A4 /* Title.swift in Sources */,
 				B00F73152903C12D005AE2A4 /* DownloadViewController.swift in Sources */,
 				B00F72F32903BF9A005AE2A4 /* SceneDelegate.swift in Sources */,
 				B00F73112903C104005AE2A4 /* UpcomingViewController.swift in Sources */,
