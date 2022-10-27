@@ -17,7 +17,8 @@ enum Section: Int {
 
 class HomeViewController: UIViewController {
 
-    
+    private var randomTrendingMovie: Title?
+    private var headerView: HeroHedearUIView?
     let sectionTitles: [String] = ["Trending movies","Trending TV", "Popular", "Upcomig Movies", "Top rated"]
 
     private let homeFeedTable: UITableView = {
@@ -35,9 +36,9 @@ class HomeViewController: UIViewController {
         navigationItem.largeTitleDisplayMode = .never
         configureNavBar()
         
-        let headerView = HeroHedearUIView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 500))
+        headerView = HeroHedearUIView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 500))
         homeFeedTable.tableHeaderView = headerView
-        
+        configureHeroHeaderView()
         
     }
     
@@ -58,6 +59,19 @@ class HomeViewController: UIViewController {
         navigationController?.navigationBar.tintColor = .white
     }
     
+    private func configureHeroHeaderView() {
+        APICaller.shared.getTrendingMovies { [weak self] results in
+            switch results {
+            case .success(let title):
+                let selectedTitle = title.randomElement()
+                self?.randomTrendingMovie = selectedTitle
+                self?.headerView?.configure(with: TitleViewModel(titleName: selectedTitle?.original_title ?? "", posterURL: selectedTitle?.poster_path ?? ""))
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
+    }
+    
 
 }
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
@@ -74,6 +88,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: CollectionViewTableViewCell.identifier, for: indexPath) as? CollectionViewTableViewCell else {
             return UITableViewCell()
         }
+        cell.delegate = self
         switch indexPath.section {
         case Section.TrendingMovies.rawValue:
             APICaller.shared.getTrendingMovies { results in
@@ -157,4 +172,13 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     
     
 
+}
+extension HomeViewController: CollectionViewTableViewCellDelegate {
+    func CollectionViewTableViewCellDidTapCell(_ cell: CollectionViewTableViewCell, viewModel: TitlePreviewViewModel) {
+        DispatchQueue.main.async { [weak self] in
+            let vc = TitlePreviewViewController()
+            vc.configure(with: viewModel)
+            self?.navigationController?.pushViewController(vc, animated: true)
+        }
+    }
 }

@@ -28,6 +28,9 @@
 		B00F733229051691005AE2A4 /* TitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00F733129051691005AE2A4 /* TitleTableViewCell.swift */; };
 		B00F733429051A17005AE2A4 /* TitleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00F733329051A17005AE2A4 /* TitleViewModel.swift */; };
 		B00F73362906C399005AE2A4 /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00F73352906C399005AE2A4 /* SearchResultsViewController.swift */; };
+		B00F733A2907E032005AE2A4 /* YoutubeSearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00F73392907E032005AE2A4 /* YoutubeSearchResponse.swift */; };
+		B00F733C2907E5AD005AE2A4 /* TitlePreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00F733B2907E5AD005AE2A4 /* TitlePreviewViewController.swift */; };
+		B00F733E2907EF8F005AE2A4 /* TitlePreviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00F733D2907EF8F005AE2A4 /* TitlePreviewViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +55,9 @@
 		B00F733129051691005AE2A4 /* TitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleTableViewCell.swift; sourceTree = "<group>"; };
 		B00F733329051A17005AE2A4 /* TitleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleViewModel.swift; sourceTree = "<group>"; };
 		B00F73352906C399005AE2A4 /* SearchResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
+		B00F73392907E032005AE2A4 /* YoutubeSearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeSearchResponse.swift; sourceTree = "<group>"; };
+		B00F733B2907E5AD005AE2A4 /* TitlePreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitlePreviewViewController.swift; sourceTree = "<group>"; };
+		B00F733D2907EF8F005AE2A4 /* TitlePreviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitlePreviewViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				B00F733329051A17005AE2A4 /* TitleViewModel.swift */,
+				B00F733D2907EF8F005AE2A4 /* TitlePreviewViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -135,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				B00F73202903C1F4005AE2A4 /* Title.swift */,
+				B00F73392907E032005AE2A4 /* YoutubeSearchResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -170,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				B00F73352906C399005AE2A4 /* SearchResultsViewController.swift */,
+				B00F733B2907E5AD005AE2A4 /* TitlePreviewViewController.swift */,
 			);
 			path = General;
 			sourceTree = "<group>";
@@ -260,13 +269,16 @@
 				B00F73272903C372005AE2A4 /* CollectionViewTableViewCell.swift in Sources */,
 				B00F73212903C1F4005AE2A4 /* Title.swift in Sources */,
 				B00F732B290445DF005AE2A4 /* TitleCollectionViewCell.swift in Sources */,
+				B00F733C2907E5AD005AE2A4 /* TitlePreviewViewController.swift in Sources */,
 				B00F73152903C12D005AE2A4 /* DownloadViewController.swift in Sources */,
 				B00F72F32903BF9A005AE2A4 /* SceneDelegate.swift in Sources */,
 				B00F733229051691005AE2A4 /* TitleTableViewCell.swift in Sources */,
+				B00F733A2907E032005AE2A4 /* YoutubeSearchResponse.swift in Sources */,
 				B00F73112903C104005AE2A4 /* UpcomingViewController.swift in Sources */,
 				B00F73252903C21C005AE2A4 /* MainTabBarViewController.swift in Sources */,
 				B00F733429051A17005AE2A4 /* TitleViewModel.swift in Sources */,
 				B00F730F2903C0F5005AE2A4 /* HomeViewController.swift in Sources */,
+				B00F733E2907EF8F005AE2A4 /* TitlePreviewViewModel.swift in Sources */,
 				B00F731D2903C1D2005AE2A4 /* APICaller.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
